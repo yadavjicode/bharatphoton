@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/_8sdp"
+        android:src="@drawable/subscribe" />
+
+    <TextView
+        android:id="@+id/linkName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/icon"
+        android:fontFamily="@font/marcellus"
+        android:padding="@dimen/_8sdp"
+        android:gravity="center_vertical"
+        android:text="My Orders"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        app:drawableEndCompat="@drawable/arrow_right" />
+
+
+</RelativeLayout>

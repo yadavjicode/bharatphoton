@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/orderIdTv"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/_2sdp"
+        android:singleLine="true"
+        android:text="BPE878080"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/logTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/_2sdp"
+        android:singleLine="true"
+        android:text="subscription"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/amtTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/_2sdp"
+        android:singleLine="true"
+        android:text="22,420"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/dateTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/_2sdp"
+        android:singleLine="true"
+        android:text="25/01/25"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/statusTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center|center_vertical"
+        android:padding="@dimen/_2sdp"
+        android:singleLine="true"
+        android:text="completed"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/notTv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:singleLine="true"
+        android:text="N/A"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_8sdp"
+        android:visibility="gone"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/Column6"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/_2sdp"
+        android:src="@drawable/certificate"
+        tools:ignore="HardcodedText" />
+</TableRow>

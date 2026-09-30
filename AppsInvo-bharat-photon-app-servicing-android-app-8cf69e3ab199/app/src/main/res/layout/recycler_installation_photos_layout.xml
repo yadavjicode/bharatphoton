@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivInstalledImg"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:shapeAppearance="@style/RoundedSquare10"
+        android:scaleType="centerCrop"
+        android:src="@drawable/product_details_product_img"
+        android:background="?selectableItemBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivPlay"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@drawable/play_button"
+        android:background="@drawable/white_10cornered_bg"
+        app:layout_constraintTop_toTopOf="@+id/ivInstalledImg"
+        app:layout_constraintBottom_toBottomOf="@+id/ivInstalledImg"
+        app:layout_constraintEnd_toEndOf="@+id/ivInstalledImg"
+        app:layout_constraintStart_toStartOf="@+id/ivInstalledImg"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

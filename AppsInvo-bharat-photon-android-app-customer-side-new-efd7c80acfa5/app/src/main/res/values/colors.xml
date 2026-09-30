@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Deep_Saffron">#FF9932</color>
+    <color name="Light_Deep_Saffron">#FEEBD8</color>
+    <color name="Green">#6FC996</color>
+    <color name="Background_Color">#F0F0F2</color>
+    <color name="Card_Background_Color">#F5F4F9</color>
+    <color name="Light_Pink">#FEE7D4</color>
+    <color name="Light_SkyBlue">#F4F9FC</color>
+    <color name="light_white">#f2f2f5</color>
+    <color name="red">#F40202</color>
+    <color name="light_gray">#E0E0E0</color>
+    <color name="keyboard_bg">#FFEAD6</color>
+
+
+    <!--order status color-->
+    <color name="pink">#E81580</color>
+    <color name="light_pink200">#F8CADA</color>
+
+    <color name="lightBlack">#8F8C8D</color>
+    <color name="out_of_stock_light_black">#B8B7B7</color>
+
+
+    <color name="green">#66CD5E</color>
+    <color name="light_green">#D7F4E2</color>
+
+    <color name="blue">#83C2ED</color>
+    <color name="light_blue">#F0F9FF</color>
+    <color name="purple">#b620dd</color>
+
+    <color name="com_facebook_button_background_color_focused_disabled">#D7D7D7</color>
+    <color name="com_facebook_button_background_color_focused">#3b5998</color>
+    <color name="com_facebook_button_border_color_focused">#3b5998</color>
+</resources>

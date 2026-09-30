@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/location_bg"
+    android:fitsSystemWindows="true"
+    tools:context=".fragment.auth.SignUpBusinessFragment">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <EditText
+                android:id="@+id/businessName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:drawableStart="@drawable/company"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="Business Name/Company name"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/lightBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/businessContactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:drawableStart="@drawable/phone_"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="Business Contact Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/lightBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/businessEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="Business Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/lightBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/ThemeOverlay.Material3.TextInputEditText.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/Deep_Saffron">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawablePadding="@dimen/_8sdp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_8sdp"
+                    android:textColorHint="@color/lightBlack"
+                    android:textSize="@dimen/_11sdp"
+                    app:drawableStartCompat="@drawable/password"
+                    tools:ignore="HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <EditText
+                android:id="@+id/gstNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:drawableStart="@drawable/tax"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="GST Number"
+                android:maxLength="15"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/lightBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/dot_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:drawableTop="@drawable/certificate"
+                        android:fontFamily="@font/marcellus"
+                        android:gravity="center"
+                        android:text="@string/upload_gst_certificate"
+                        android:textSize="@dimen/_11sdp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/chooseFile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        app:cardBackgroundColor="@color/Deep_Saffron"
+                        app:cardCornerRadius="@dimen/_5sdp"
+                        app:contentPadding="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/choose_file"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp" />
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/Deep_Saffron"
+                    android:visibility="gone" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@color/transparent"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    app:cardElevation="0dp">
+
+                    <ImageView
+                        android:id="@+id/gstCertificate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@null"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone" />
+
+                </androidx.cardview.widget.CardView>
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="@dimen/_12sdp"
+                    android:src="@drawable/close__" />
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:fontFamily="@font/marcellus"
+                android:text="Contact Person"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/personName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:drawableStart="@drawable/user"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="Contact Person Name"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/lightBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <EditText
+                android:id="@+id/desgination"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:drawableStart="@drawable/work"
+                android:drawablePadding="@dimen/_8sdp"
+                android:hint="Designation"
+                android:padding="@dimen/_8sdp"
+                android:singleLine="true"
+                android:textColorHint="@color/lightBlack"
+                android:textSize="@dimen/_11sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:background="@drawable/_style_edittext_border"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:src="@drawable/phone_" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    app:ccp_autoDetectCountry="true"
+                    app:ccp_showFlag="false"
+                    app:ccp_showNameCode="false"
+                    app:ccp_textSize="@dimen/_10sdp" />
+
+                <EditText
+                    android:id="@+id/phoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="Contact Person Mobile Number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColorHint="@color/lightBlack"
+                    android:textSize="@dimen/_11sdp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/checkLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:src="@drawable/check" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/marcellus"
+                    android:text="Accept all the"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/termsAndCondition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/marcellus"
+                    android:text=" Terms of use"
+                    android:textColor="@color/Deep_Saffron"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/marcellus"
+                    android:text=" &amp;"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/privacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/marcellus"
+                    android:text=" Privacy Policy"
+                    android:textColor="@color/Deep_Saffron"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <com.droidbond.loadingbutton.LoadingButton
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                app:background="@drawable/button_background"
+                app:text="@string/submit"
+                app:textSize="@dimen/_14sdp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:src="@drawable/logo" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

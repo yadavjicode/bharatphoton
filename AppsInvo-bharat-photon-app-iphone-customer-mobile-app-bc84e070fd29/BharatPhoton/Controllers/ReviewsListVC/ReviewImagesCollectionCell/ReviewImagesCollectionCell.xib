@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ReviewImagesCollectionCell" customModule="Bharat_Photon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="128"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="128"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group 26" translatesAutoresizingMaskIntoConstraints="NO" id="C8Q-jJ-kh4">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="128"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C8Q-jJ-kh4" secondAttribute="trailing" id="GI6-yf-4Jb"/>
+                <constraint firstItem="C8Q-jJ-kh4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p1T-0b-kZ2"/>
+                <constraint firstItem="C8Q-jJ-kh4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pDM-Ee-Nfe"/>
+                <constraint firstAttribute="bottom" secondItem="C8Q-jJ-kh4" secondAttribute="bottom" id="zGl-MK-rnR"/>
+            </constraints>
+            <size key="customSize" width="133" height="128"/>
+            <connections>
+                <outlet property="reviewImg" destination="C8Q-jJ-kh4" id="Xhd-4y-Lqc"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="118.52678571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Mask Group 26" width="105" height="113"/>
+    </resources>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.BharatPhotonServiceApp" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!--Status Bar and Navigation -->
+        <item name="android:enforceNavigationBarContrast">false</item>
+        <item name="android:enforceStatusBarContrast">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- Navigation bar color. -->
+        <item name="android:navigationBarColor">@color/white</item>
+
+        <!-- Removes default splash screen. -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+
+        <!--Primary Colors-->
+        <item name="colorPrimary">@color/photon_orange</item>
+        <item name="android:colorPrimary">@color/photon_orange</item>
+        <item name="colorOnPrimaryContainer">@color/photon_orange</item>
+        <item name="colorOnPrimary">@color/photon_orange</item>
+        <item name="android:textColorPrimary">@color/photon_orange</item>
+        <item name="colorOnSecondary">@color/photon_orange</item>
+        <item name="colorSecondary">@color/photon_orange</item>
+        <item name="android:colorSecondary">@color/photon_orange</item>
+        <item name="android:textColorSecondary">@color/photon_orange</item>
+
+        <item name="android:itemBackground">@color/white</item>
+        <!-- Set default fontFamily. -->
+        <item name="android:fontFamily">@font/helvetica_neue_light</item>
+        <item name="fontFamily">@font/helvetica_neue_light</item>
+
+        <!--Adjust screen scroll when keyboard shows-->
+        <item name="android:windowSoftInputMode">adjustResize</item>
+
+    </style>
+
+    <style name="Theme.BharatPhotonServiceApp" parent="Base.Theme.BharatPhotonServiceApp" />
+
+</resources>

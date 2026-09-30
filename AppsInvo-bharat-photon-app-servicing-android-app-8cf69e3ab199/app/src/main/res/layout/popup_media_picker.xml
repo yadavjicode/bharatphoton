@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/logo_icon_small"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture Image or Video : "
+        style="@style/FontFamilyHelvetica"
+        android:textStyle="bold"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        />
+    <TextView
+        android:id="@+id/tvCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Image Using Camera"
+        android:elevation="@dimen/_5sdp"
+        style="@style/FontFamilyHelvetica"
+        android:textColor="@color/photon_orange"
+        android:background="@drawable/ripple_orange_50cornered_stroked_bg"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:paddingVertical="@dimen/_7sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        />
+    <TextView
+        android:id="@+id/tvVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Video Using Camera"
+        android:elevation="@dimen/_5sdp"
+        style="@style/FontFamilyHelvetica"
+        android:textColor="@color/photon_orange"
+        android:background="@drawable/ripple_orange_50cornered_stroked_bg"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:paddingVertical="@dimen/_7sdp"
+        android:paddingHorizontal="@dimen/_20sdp"
+        android:gravity="center"
+        android:layout_gravity="start"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        />
+</LinearLayout>

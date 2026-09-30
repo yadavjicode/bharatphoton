@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/light_orange_5cornered_bg"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    android:layout_gravity="center_horizontal">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_2sdp"
+        app:cardElevation="0dp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        >
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/toast_icon"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/logo_icon_small"
+            android:padding="@dimen/_2sdp"
+            android:layout_gravity="center_vertical"
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/toast_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!This is a custom toast!"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_10sdp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        />
+</LinearLayout>

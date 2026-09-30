@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".fragment.home.HomeFragment">
+
+    <include
+        android:id="@+id/topBar"
+        layout="@layout/home_top_bar" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <include
+                        android:id="@+id/search"
+                        layout="@layout/search_layout" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.viewpager2.widget.ViewPager2
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/notFound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/marcellus"
+                        android:gravity="center"
+                        android:text="Banner not available!"
+                        android:textColor="@color/Deep_Saffron"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                </FrameLayout>
+
+                <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dotsIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    app:dotsColor="@color/Light_Deep_Saffron"
+                    app:dotsElevation="@dimen/_3sdp"
+                    app:dotsSize="@dimen/_8sdp"
+                    app:dotsStrokeColor="@color/Light_Deep_Saffron"
+                    app:selectedDotColor="@color/Deep_Saffron" />
+
+                <TextView
+                    android:id="@+id/myProducts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/my_product_style"
+                    android:drawablePadding="@dimen/_12sdp"
+                    android:fontFamily="@font/marcellus"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_12sdp"
+                    android:text="@string/my_products"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/arrow_right"
+                    app:drawableStartCompat="@drawable/product__1_" />
+
+                <TextView
+                    android:id="@+id/mySubscription"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/my_product_style"
+                    android:drawablePadding="@dimen/_12sdp"
+                    android:fontFamily="@font/marcellus"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_12sdp"
+                    android:text="@string/my_subscription"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:drawableEndCompat="@drawable/arrow_right"
+                    app:drawableStartCompat="@drawable/subscription" />
+
+                <RelativeLayout
+                    android:id="@+id/totalWaterSavedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/water_img">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_12sdp"
+                        android:fontFamily="@font/marcellus"
+                        android:gravity="center_vertical"
+                        android:text="@string/total_water_saved"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/faucet"
+                        tools:ignore="RelativeOverlap" />
+
+
+                    <TextView
+                        android:id="@+id/waterSavedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_12sdp"
+                        android:text="0 Ltrs"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/totalCostSavedLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:background="@drawable/cost_img">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:drawablePadding="@dimen/_12sdp"
+                        android:fontFamily="@font/marcellus"
+                        android:gravity="center_vertical"
+                        android:text="@string/cost_saved"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/pay_per_click__1_"
+                        tools:ignore="RelativeOverlap" />
+
+
+                    <TextView
+                        android:id="@+id/costSavedTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:drawablePadding="@dimen/_12sdp"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/_12sdp"
+                        android:text="₹ 0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/marcellus"
+                        android:padding="@dimen/_12sdp"
+                        android:text="Products Range"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/viewMore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:drawablePadding="@dimen/_6sdp"
+                        android:fontFamily="@font/marcellus"
+                        android:padding="@dimen/_12sdp"
+                        android:text="View More"
+                        android:textColor="@color/Deep_Saffron"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/arrow_right" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/categoryRv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:padding="0dp" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardCornerRadius="@dimen/_12sdp"
+    app:cardElevation="0dp"
+    app:contentPadding="@dimen/_12sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/profile_img" />
+        <TextView
+            android:id="@+id/notificationTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/profilePhoto"
+            android:text="Payment is successfully completed."
+            android:layout_marginStart="@dimen/_8sdp"
+            android:textSize="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/marcellus"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateTv"
+            android:layout_below="@id/notificationTv"
+            android:layout_toEndOf="@id/profilePhoto"
+            android:text="05 oct"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/grey"
+            android:layout_marginStart="@dimen/_8sdp"
+            />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

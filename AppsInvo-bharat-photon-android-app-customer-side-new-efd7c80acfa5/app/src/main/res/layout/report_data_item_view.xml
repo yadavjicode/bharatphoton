@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tableLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="S.No.."
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/serialNoTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="1"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="SIN"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sinTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="1 Feb 2025"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="FIN"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Newgen Software "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Product"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productNameTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Model No."
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/modelNoTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Installation Date"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/installationDateTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@+id/batteryVoltageLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Battery Voltage"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/batteryVoltageTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@+id/waterSavedLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Water Saved"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/waterSavedTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@+id/costSavedLayout">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Cost Saved"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/costSavedTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@+id/userCountLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="User Count"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/userCountTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@id/sensingRangeLayout">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Sensing Range Setting"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sensingRangeTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@+id/preflushLayout">
+
+        <TextView
+            android:id="@+id/preflushTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Off Delay in AT"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/offDetailTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow android:id="@+id/flushTimeLayout">
+
+
+        <TextView
+            android:id="@+id/flushTimeTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Cut Off Delay in AT"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cutOffDetailTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+
+            android:text="Warranty/Subscription End Date"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/endDateTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_8sdp"
+            android:text="Sensor Tap"
+            android:textColor="#000000"
+            android:textSize="@dimen/_11sdp" />
+    </TableRow>
+</TableLayout>
+

@@ -1,0 +1,1 @@
+package app.bharatphoton.service.utilsimport android.util.Logvar TAG = "TAG12345"fun Any?.mLog(){ Log.d(TAG,"$this") }

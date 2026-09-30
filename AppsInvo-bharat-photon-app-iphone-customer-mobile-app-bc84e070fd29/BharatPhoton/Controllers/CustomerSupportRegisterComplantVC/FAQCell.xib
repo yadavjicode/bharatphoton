@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="208" id="KGk-i7-Jjw" customClass="FAQCell" customModule="Bharat_Photon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="208"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="208"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VG4-BN-4xM">
+                        <rect key="frame" x="16" y="8" width="385" height="192"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F2L-Em-BrO">
+                                <rect key="frame" x="20" y="100" width="345" height="72"/>
+                                <string key="text">Urinal flusher are probably the hardest for public
+to understand how they work.                            
+Concealed urinal flusher are designed so that the
+flusher is to be hidden from view, perhaps
+behind IPS duct wall panels, wall cladding, or
+within a wal void in ne wasnroom</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kDB-SU-LCA">
+                                <rect key="frame" x="16" y="20" width="353" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-f7-pW7">
+                                        <rect key="frame" x="331" y="19" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="2tc-NT-FqK"/>
+                                            <constraint firstAttribute="width" constant="22" id="LFN-nP-8ES"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="DropDown"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="How Does An Exposed How  " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Rq-ge-lwC">
+                                        <rect key="frame" x="0.0" y="0.0" width="331" height="60"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="9Rq-ge-lwC" secondAttribute="bottom" id="1da-Ne-syY"/>
+                                    <constraint firstItem="9Rq-ge-lwC" firstAttribute="top" secondItem="kDB-SU-LCA" secondAttribute="top" id="9oM-Bl-I82"/>
+                                    <constraint firstItem="Yme-f7-pW7" firstAttribute="leading" secondItem="9Rq-ge-lwC" secondAttribute="trailing" id="TYL-I4-TDw"/>
+                                    <constraint firstAttribute="height" constant="60" id="i7j-Mf-L89"/>
+                                    <constraint firstItem="Yme-f7-pW7" firstAttribute="centerY" secondItem="kDB-SU-LCA" secondAttribute="centerY" id="myR-8O-MzX"/>
+                                    <constraint firstItem="9Rq-ge-lwC" firstAttribute="leading" secondItem="kDB-SU-LCA" secondAttribute="leading" id="oSQ-9D-8kV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Yme-f7-pW7" secondAttribute="trailing" id="u9s-XL-v1f"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F2L-Em-BrO" firstAttribute="leading" secondItem="VG4-BN-4xM" secondAttribute="leading" constant="20" id="CNX-H7-20J"/>
+                            <constraint firstItem="kDB-SU-LCA" firstAttribute="top" secondItem="VG4-BN-4xM" secondAttribute="top" constant="20" id="MsS-vL-0Na"/>
+                            <constraint firstItem="kDB-SU-LCA" firstAttribute="leading" secondItem="VG4-BN-4xM" secondAttribute="leading" constant="16" id="Nyh-Kg-s4V"/>
+                            <constraint firstItem="F2L-Em-BrO" firstAttribute="top" secondItem="kDB-SU-LCA" secondAttribute="bottom" constant="20" id="bZJ-se-XCL"/>
+                            <constraint firstAttribute="trailing" secondItem="kDB-SU-LCA" secondAttribute="trailing" constant="16" id="iRt-8W-jor"/>
+                            <constraint firstAttribute="trailing" secondItem="F2L-Em-BrO" secondAttribute="trailing" constant="20" id="m1O-vL-DWf"/>
+                            <constraint firstAttribute="bottom" secondItem="F2L-Em-BrO" secondAttribute="bottom" constant="20" id="rva-T6-fvI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderLineWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="VG4-BN-4xM" secondAttribute="bottom" constant="8" id="GoL-DS-PvB"/>
+                    <constraint firstItem="VG4-BN-4xM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aSu-oZ-dMt"/>
+                    <constraint firstItem="VG4-BN-4xM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bZz-Ul-lB5"/>
+                    <constraint firstAttribute="trailing" secondItem="VG4-BN-4xM" secondAttribute="trailing" constant="16" id="uoe-9F-BjS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="answerLbl" destination="F2L-Em-BrO" id="nAB-bN-u6S"/>
+                <outlet property="arrowBtn" destination="Yme-f7-pW7" id="TNd-Gy-7ho"/>
+                <outlet property="questionLbl" destination="9Rq-ge-lwC" id="mYy-00-Jwm"/>
+            </connections>
+            <point key="canvasLocation" x="202.17391304347828" y="127.90178571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DropDown" width="14.5" height="8"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

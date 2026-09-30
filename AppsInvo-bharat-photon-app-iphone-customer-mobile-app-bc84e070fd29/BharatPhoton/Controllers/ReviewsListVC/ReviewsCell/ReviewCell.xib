@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="325" id="KGk-i7-Jjw" customClass="ReviewCell" customModule="Bharat_Photon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="325"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="325"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile0" translatesAutoresizingMaskIntoConstraints="NO" id="8GQ-40-dPL">
+                        <rect key="frame" x="16" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="9dW-XW-QcG"/>
+                            <constraint firstAttribute="width" constant="50" id="EDY-N5-CnZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thomas William" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yn5-6z-4Mj">
+                        <rect key="frame" x="82" y="16.5" width="106.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09/06/02025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WxP-pq-P5f">
+                        <rect key="frame" x="162" y="37.5" width="85.5" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaJ-Fw-UPg" customClass="CosmosView" customModule="Bharat_Photon" customModuleProvider="target">
+                        <rect key="frame" x="82" y="39" width="70" height="15"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="CoA-Fc-EMC"/>
+                            <constraint firstAttribute="height" constant="15" id="dp9-wk-cbz"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
+                                <color key="value" red="1" green="0.55294117649999996" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="emptyBorderColor">
+                                <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="emptyBorderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="starMargin">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIi-9h-euw">
+                        <rect key="frame" x="82" y="64" width="284" height="181"/>
+                        <string key="text">We are associated with Bharat Photon last many years. We are dealing with them in washroom sensor based products like sensor tap, urinal for the help of our customers</string>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlm-6F-sxZ">
+                        <rect key="frame" x="82" y="255" width="270" height="60"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8Zt-uG-JLT">
+                                <rect key="frame" x="0.0" y="0.0" width="270" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iKe-tG-ciD">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8Zt-uG-JLT" firstAttribute="leading" secondItem="Jlm-6F-sxZ" secondAttribute="leading" id="5F3-N2-HH8"/>
+                            <constraint firstAttribute="height" constant="60" id="7RR-Fj-IaT"/>
+                            <constraint firstAttribute="trailing" secondItem="8Zt-uG-JLT" secondAttribute="trailing" id="IbZ-Fa-V1I"/>
+                            <constraint firstAttribute="bottom" secondItem="8Zt-uG-JLT" secondAttribute="bottom" id="nrC-6z-Qyp"/>
+                            <constraint firstItem="8Zt-uG-JLT" firstAttribute="top" secondItem="Jlm-6F-sxZ" secondAttribute="top" id="vng-py-1uO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Yn5-6z-4Mj" firstAttribute="centerY" secondItem="8GQ-40-dPL" secondAttribute="centerY" constant="-10" id="9kV-dZ-i4q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hIi-9h-euw" secondAttribute="trailing" constant="16" id="Cdh-PL-j4K"/>
+                    <constraint firstItem="WxP-pq-P5f" firstAttribute="leading" secondItem="UaJ-Fw-UPg" secondAttribute="trailing" constant="10" id="ML9-Uh-Tqi"/>
+                    <constraint firstAttribute="trailing" secondItem="Jlm-6F-sxZ" secondAttribute="trailing" constant="50" id="McH-M3-sqx"/>
+                    <constraint firstItem="UaJ-Fw-UPg" firstAttribute="leading" secondItem="8GQ-40-dPL" secondAttribute="trailing" constant="16" id="N8V-LI-GxM"/>
+                    <constraint firstItem="UaJ-Fw-UPg" firstAttribute="top" secondItem="Yn5-6z-4Mj" secondAttribute="bottom" constant="5" id="QpU-zj-nJY"/>
+                    <constraint firstItem="WxP-pq-P5f" firstAttribute="centerY" secondItem="UaJ-Fw-UPg" secondAttribute="centerY" id="REE-Me-BZM"/>
+                    <constraint firstItem="hIi-9h-euw" firstAttribute="top" secondItem="UaJ-Fw-UPg" secondAttribute="bottom" constant="10" id="Urh-eP-Q8f"/>
+                    <constraint firstItem="hIi-9h-euw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="62" id="XYn-wU-pLu"/>
+                    <constraint firstItem="Jlm-6F-sxZ" firstAttribute="leading" secondItem="hIi-9h-euw" secondAttribute="leading" id="ZTc-bD-1h7"/>
+                    <constraint firstItem="8GQ-40-dPL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cEw-JC-ZlV"/>
+                    <constraint firstItem="8GQ-40-dPL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="eHq-YL-aoY"/>
+                    <constraint firstItem="Jlm-6F-sxZ" firstAttribute="top" secondItem="hIi-9h-euw" secondAttribute="bottom" constant="10" id="g7a-03-xkd"/>
+                    <constraint firstAttribute="bottom" secondItem="Jlm-6F-sxZ" secondAttribute="bottom" constant="10" id="o2I-W2-ZcY"/>
+                    <constraint firstItem="Yn5-6z-4Mj" firstAttribute="leading" secondItem="8GQ-40-dPL" secondAttribute="trailing" constant="16" id="zuI-MT-d6t"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLbl" destination="WxP-pq-P5f" id="mVi-c8-gIm"/>
+                <outlet property="imagesCollection" destination="8Zt-uG-JLT" id="Iwl-hS-5Xl"/>
+                <outlet property="nameLbl" destination="Yn5-6z-4Mj" id="QnM-mA-qRj"/>
+                <outlet property="profileImg" destination="8GQ-40-dPL" id="WNd-3p-xyl"/>
+                <outlet property="ratingView" destination="UaJ-Fw-UPg" id="oOU-og-HiV"/>
+                <outlet property="reviewLbl" destination="hIi-9h-euw" id="gGe-Jy-5PF"/>
+                <outlet property="viewHeight" destination="7RR-Fj-IaT" id="L02-2l-9ag"/>
+            </connections>
+            <point key="canvasLocation" x="191.30434782608697" y="205.91517857142856"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="UaJ-Fw-UPg">
+            <size key="intrinsicContentSize" width="75" height="15"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Profile0" width="34" height="34"/>
+    </resources>
+</document>

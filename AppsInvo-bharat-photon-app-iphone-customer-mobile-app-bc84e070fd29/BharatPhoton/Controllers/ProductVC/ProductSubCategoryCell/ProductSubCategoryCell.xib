@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductSubCategoryCell" customModule="Bharat_Photon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="131" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="131" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c3" translatesAutoresizingMaskIntoConstraints="NO" id="xcG-p3-jK6">
+                        <rect key="frame" x="30.5" y="0.0" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="AmX-4v-k7b"/>
+                            <constraint firstAttribute="width" constant="70" id="Hno-Tk-pCG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderLineWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" systemColor="systemGrayColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Urinal Sensor" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtj-zd-nsq">
+                        <rect key="frame" x="0.0" y="78" width="131" height="14"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6p-x7-kE2" customClass="CustomDashedView" customModule="Bharat_Photon" customModuleProvider="target">
+                        <rect key="frame" x="30.5" y="0.0" width="70" height="70"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.8901960784313725" blue="0.7803921568627451" alpha="0.74666560090930256" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="B7i-hH-d9J"/>
+                            <constraint firstAttribute="height" constant="70" id="rMZ-xr-GuP"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="dashColor">
+                                <color key="value" red="1" green="0.55294117649999996" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="dashWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="dashLength">
+                                <real key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="betweenDashesSpace">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Xtj-zd-nsq" firstAttribute="top" secondItem="xcG-p3-jK6" secondAttribute="bottom" constant="8" id="0IN-GA-tEE"/>
+                <constraint firstItem="Xtj-zd-nsq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fus-qd-8aX"/>
+                <constraint firstItem="c6p-x7-kE2" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QeQ-cZ-Xn1"/>
+                <constraint firstItem="c6p-x7-kE2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="S7o-yM-yFP"/>
+                <constraint firstItem="xcG-p3-jK6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZJ7-lh-boe"/>
+                <constraint firstItem="Xtj-zd-nsq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ZMT-Yf-usE"/>
+                <constraint firstAttribute="trailing" secondItem="Xtj-zd-nsq" secondAttribute="trailing" id="dz2-lf-1MV"/>
+                <constraint firstItem="xcG-p3-jK6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tug-rs-U9k"/>
+            </constraints>
+            <size key="customSize" width="131" height="124"/>
+            <connections>
+                <outlet property="selectedItemView" destination="c6p-x7-kE2" id="AFb-EG-TW5"/>
+                <outlet property="subCategoryImg" destination="xcG-p3-jK6" id="OuY-rs-bg8"/>
+                <outlet property="subCategoryNameLbl" destination="Xtj-zd-nsq" id="vcH-hj-F1J"/>
+            </connections>
+            <point key="canvasLocation" x="189.13043478260872" y="136.60714285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="c3" width="62" height="62"/>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

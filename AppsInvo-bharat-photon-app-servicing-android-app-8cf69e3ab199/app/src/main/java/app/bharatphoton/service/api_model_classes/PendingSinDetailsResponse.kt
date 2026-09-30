@@ -1,0 +1,81 @@
+package app.bharatphoton.service.api_model_classes
+
+data class PendingSinDetailsResponse(
+    var code: Int?,
+    var count: Int?,
+    var `data`: PendingSinDetailsResponseData?,
+    var message: String?
+)
+data class PendingSinDetailsResponseData(
+    var installation: PendingSinDetailsResponseInstallation?,
+    var user: PendingSinDetailsResponseUser?
+)
+data class PendingSinDetailsResponseInstallation(
+    var _id: String?,
+    var batteryVoltage: String?,
+    var complaintId: String?,
+    var costSaved: String?,
+    var createdAt: String?,
+    var customerId: String?,
+    var customerName: String?,
+    var finNo: String?,
+    var flushTime: String?,
+    var offDelay: String?,
+    var cutOffDelay: String?,
+    var image: List<PendingSinDetailsResponseImage?>?,
+    var installationType: String?,
+    var isOtpVerfied: Boolean?,
+    var is_deleted: Boolean?,
+    var orderId: String?,
+    var otp: String?,
+    var preflush: String?,
+    var productId: String?,
+    var productImage: List<PendingSinDetailsResponseImage?>?,
+    var range: String?,
+    var remark: String?,
+    var resolveAction: String?,
+    var resolveDate: String?,
+    var uuid: String?,
+    var sin: String?,
+    var staffId: String?,
+    var status: Boolean?,
+    var totalPayment: String?,
+    var updatedAt: String?,
+    var userCount: String?,
+    var waterSaved: String?
+)
+data class PendingSinDetailsResponseImage(
+    var _id: String?,
+    var url: String?
+)
+data class PendingSinDetailsResponseUser(
+    var _id: String?,
+    var appleId: String?,
+    var contactNo: Any?,
+    var country_code: String?,
+    var createdAt: String?,
+    var deviceId: String?,
+    var deviceToken: String?,
+    var deviceType: String?,
+    var email: String?,
+    var facebookId: String?,
+    var firstName: String?,
+    var googleId: String?,
+    var isActive: Boolean?,
+    var isDeleted: Boolean?,
+    var isPhoneVerified: Boolean?,
+    var isemailVerified: Boolean?,
+    var lastName: String?,
+    var otp: String?,
+    var phoneNo: Long?,
+    var profileImage: String?,
+    var saveMoney: Int?,
+    var saveWater: String?,
+    var secondayPhoneNo: Any?,
+    var status: Boolean?,
+    var tempEmail: String?,
+    var tempPhoneNo: Any?,
+    var tempcountry_code: Any?,
+    var updatedAt: String?,
+    var userType: Int?
+)

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/location_bg"
+    tools:context=".fragment.auth.OTPFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/marcellus"
+                android:gravity="center"
+                android:text="@string/entey_your_n_verification_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_22sdp" />
+
+            <TextView
+                android:id="@+id/otpTypeMsgTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/marcellus"
+                android:gravity="center"
+                android:text="@string/please_enter_6_digits_code_which_has_been_nsent_to_your_registered_mobile_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <com.otpview.OTPTextView
+                android:id="@+id/OtpView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:cursorVisible="false"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:importantForAccessibility="no"
+                android:inputType="none"
+                android:textColor="@android:color/black"
+                app:bar_active_color="@color/Deep_Saffron"
+                app:bar_enabled="true"
+                app:bar_height="@dimen/_2sdp"
+                app:bar_inactive_color="@android:color/black"
+                app:bar_margin_bottom="0dp"
+                app:bar_margin_left="@dimen/_2sdp"
+                app:bar_margin_right="@dimen/_2sdp"
+                app:height="@dimen/_30sdp"
+                app:length="6"
+                app:otp=""
+                app:otp_text_size="@dimen/_20sdp"
+                app:width="@dimen/_30sdp" />
+
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:text="00:34"
+                android:textColor="@color/Deep_Saffron"
+                android:textStyle="bold" />
+
+            <com.droidbond.loadingbutton.LoadingButton
+                android:id="@+id/verifyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:background="@drawable/button_background"
+                app:text="@string/verify"
+                app:textSize="@dimen/_12sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/marcellus"
+                    android:text="@string/don_t_received_the_code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/resendCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="@string/resend_code"
+                    android:textColor="@color/Deep_Saffron"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

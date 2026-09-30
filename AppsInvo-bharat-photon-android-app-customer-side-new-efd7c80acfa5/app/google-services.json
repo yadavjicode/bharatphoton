@@ -1,0 +1,158 @@
+{
+  "project_info": {
+    "project_number": "783785145888",
+    "project_id": "bharatphoton-56a48",
+    "storage_bucket": "bharatphoton-56a48.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783785145888:android:f250b6bc15b7fa00cbee45",
+        "android_client_info": {
+          "package_name": "app.bharatphoton.service"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783785145888-fblnai735bg2qu6tl6ibmf8vt8km7eka.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.bharatphoton.service",
+            "certificate_hash": "4e6830c5d176eacd26595eae7132696b7e5ca0b3"
+          }
+        },
+        {
+          "client_id": "783785145888-k60srucolhn6dr1ta9bibchqprjquae7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBlfmi2JQ5YJDP-2EwjUWXAWsiwHXK8HY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783785145888-k60srucolhn6dr1ta9bibchqprjquae7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "783785145888-384i4k2dq9i7gcrrg0k4tcmdqf6u5rrh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BharatPhoton"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783785145888:android:ff870104a483effacbee45",
+        "android_client_info": {
+          "package_name": "com.app.bharatphoton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783785145888-r8hnfmtnr9v7uhe70g0ioofh9o2m074j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bharatphoton",
+            "certificate_hash": "45310e8914b6a02f74324218c4ac1bf508941713"
+          }
+        },
+        {
+          "client_id": "783785145888-ugj6da2b6474l3atfsigoifhktvg17t4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.bharatphoton",
+            "certificate_hash": "d5cb590d0cb235e72b2361765585a69a39f86281"
+          }
+        },
+        {
+          "client_id": "783785145888-k60srucolhn6dr1ta9bibchqprjquae7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBlfmi2JQ5YJDP-2EwjUWXAWsiwHXK8HY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783785145888-k60srucolhn6dr1ta9bibchqprjquae7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "783785145888-384i4k2dq9i7gcrrg0k4tcmdqf6u5rrh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BharatPhoton"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783785145888:android:54643bad31192185cbee45",
+        "android_client_info": {
+          "package_name": "com.example.bharatphoton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783785145888-g7qbe6afm8clkjv171tlko63bkpcvr45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bharatphoton",
+            "certificate_hash": "1e735ca618d4faf51dc2e409ddc7c20a37b746cb"
+          }
+        },
+        {
+          "client_id": "783785145888-nbgat4paffo1tlsl5jcsgser23jsrft0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bharatphoton",
+            "certificate_hash": "759b52b60c20bafb052cbe048ec3ee591b396545"
+          }
+        },
+        {
+          "client_id": "783785145888-k60srucolhn6dr1ta9bibchqprjquae7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBlfmi2JQ5YJDP-2EwjUWXAWsiwHXK8HY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783785145888-k60srucolhn6dr1ta9bibchqprjquae7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "783785145888-384i4k2dq9i7gcrrg0k4tcmdqf6u5rrh.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.BharatPhoton"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

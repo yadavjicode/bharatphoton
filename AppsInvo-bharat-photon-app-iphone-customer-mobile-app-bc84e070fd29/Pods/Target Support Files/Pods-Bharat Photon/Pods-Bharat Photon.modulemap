@@ -1,0 +1,6 @@
+framework module Pods_Bharat_Photon {
+  umbrella header "Pods-Bharat Photon-umbrella.h"
+
+  export *
+  module * { export * }
+}

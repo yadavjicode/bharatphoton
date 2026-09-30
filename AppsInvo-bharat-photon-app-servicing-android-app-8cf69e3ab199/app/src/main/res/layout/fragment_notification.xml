@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/clNotification"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/photon_dull_white"
+    tools:context=".ui.fragments.NotificationFragment">
+
+<!--
+    <LinearLayout
+        android:id="@+id/llNotificationOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginHorizontal="@dimen/_8sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/swipeRefreshLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        >
+        <CheckBox
+            android:id="@+id/cbAll"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:background="@drawable/selector_checkbox_orange_white_5cornered"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:gravity="center"
+            android:layout_gravity="center"
+            style="@style/SecondFontFamily"
+            android:text="All"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/photon_light_black"
+            android:textSize="@dimen/_10sdp" />
+        <CheckBox
+            android:id="@+id/cbUnread"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:paddingHorizontal="@dimen/_20sdp"
+            android:background="@drawable/selector_checkbox_orange_white_5cornered"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:gravity="center"
+            style="@style/SecondFontFamily"
+            android:layout_gravity="center"
+            android:text="Unread"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textColor="@color/photon_light_black"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+-->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_auto_start="true"
+        android:visibility="gone"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+            <include layout="@layout/item_shimmer_layout_for_notification" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsvNotification"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAllNotification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:clipToPadding="false"
+                    android:paddingBottom="@dimen/_15sdp"
+                    />
+                <ProgressBar
+                    android:id="@+id/pbLoaderBottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:indeterminateDrawable="@drawable/custom_circular_progress_bar"
+                    android:indeterminate="true"
+                    />
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/_50sdp"/>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/tvNoData"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Available"
+        style="@style/FontFamilyHelvetica"
+        android:textSize="@dimen/_10sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

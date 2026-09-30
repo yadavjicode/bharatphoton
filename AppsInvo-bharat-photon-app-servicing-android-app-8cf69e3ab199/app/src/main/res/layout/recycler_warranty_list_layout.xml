@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llItem"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/black_10stroked_bg"
+    >
+    <ImageView
+        android:id="@+id/ivSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/radio_unselected"
+        android:layout_gravity="end"
+        />
+    <TextView
+        android:id="@+id/tvWarranty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="6\nMonths"
+        style="@style/FontFamilyHelvetica"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:layout_gravity="center"
+        />
+</LinearLayout>

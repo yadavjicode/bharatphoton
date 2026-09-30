@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.app.bharatphoton.fragment.auth.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.app.bharatphoton.fragment.auth.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.app.bharatphoton.fragment.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.app.bharatphoton.fragment.auth.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/forgetPasswordFragment"
+        android:name="com.app.bharatphoton.fragment.auth.ForgetPasswordFragment"
+        android:label="fragment_forget_password"
+        tools:layout="@layout/fragment_forget_password" />
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.app.bharatphoton.fragment.auth.OTPFragment"
+        android:label="fragment_o_t_p"
+        tools:layout="@layout/fragment_o_t_p" />
+    <fragment
+        android:id="@+id/setNewPasswordFragment"
+        android:name="com.app.bharatphoton.fragment.auth.SetNewPasswordFragment"
+        android:label="fragment_set_new_password"
+        tools:layout="@layout/fragment_set_new_password" />
+    <fragment
+        android:id="@+id/signUpIndividualFragment"
+        android:name="com.app.bharatphoton.fragment.auth.SignUpIndividualFragment"
+        android:label="fragment_sign_up_individual"
+        tools:layout="@layout/fragment_sign_up_individual" />
+    <fragment
+        android:id="@+id/signUpBusinessFragment"
+        android:name="com.app.bharatphoton.fragment.auth.SignUpBusinessFragment"
+        android:label="fragment_sign_up_business"
+        tools:layout="@layout/fragment_sign_up_business" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.app.bharatphoton.fragment.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.app.bharatphoton.fragment.categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/myOrderFragment"
+        android:name="com.app.bharatphoton.fragment.order.MyOrderFragment"
+        android:label="fragment_my_order"
+        tools:layout="@layout/fragment_my_order" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.app.bharatphoton.fragment.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.app.bharatphoton.fragment.product.ProductsFragment"
+        android:label="fragment_products"
+        tools:layout="@layout/fragment_products" />
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.app.bharatphoton.fragment.product.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.app.bharatphoton.fragment.cart.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/checkOutFragment"
+        android:name="com.app.bharatphoton.fragment.cart.CheckOutFragment"
+        android:label="fragment_check_out"
+        tools:layout="@layout/fragment_check_out" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.app.bharatphoton.fragment.payment.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" />
+    <fragment
+        android:id="@+id/confirmOrderFragment"
+        android:name="com.app.bharatphoton.fragment.order.ConfirmOrderFragment"
+        android:label="fragment_confirm_order"
+        tools:layout="@layout/fragment_confirm_order" />
+    <fragment
+        android:id="@+id/uploadPhotoFragment"
+        android:name="com.app.bharatphoton.fragment.order.UploadPhotoFragment"
+        android:label="fragment_upload_photo"
+        tools:layout="@layout/fragment_upload_photo" />
+    <fragment
+        android:id="@+id/sitePhotoSubmittedFragment"
+        android:name="com.app.bharatphoton.fragment.order.SitePhotoSubmittedFragment"
+        android:label="fragment_site_photo_submitted"
+        tools:layout="@layout/fragment_site_photo_submitted" />
+    <fragment
+        android:id="@+id/orderDetailsShippedFragment"
+        android:name="com.app.bharatphoton.fragment.order.OrderDetailsShippedFragment"
+        android:label="fragment_order_details_shipped"
+        tools:layout="@layout/fragment_order_details_shipped" />
+    <fragment
+        android:id="@+id/myAddressFragment"
+        android:name="com.app.bharatphoton.fragment.address.MyAddressFragment"
+        android:label="fragment_my_address"
+        tools:layout="@layout/fragment_my_address" />
+    <fragment
+        android:id="@+id/addAddressFragment"
+        android:name="com.app.bharatphoton.fragment.address.AddAddressFragment"
+        android:label="fragment_add_adress"
+        tools:layout="@layout/fragment_add_adress" />
+    <dialog
+        android:id="@+id/changeAddressBottomSheetFragment"
+        android:name="com.app.bharatphoton.fragment.address.ChangeAddressBottomSheetFragment"
+        android:label="fragment_change_address_bottom_sheet"
+        tools:layout="@layout/fragment_change_address_bottom_sheet" />
+    <dialog
+        android:id="@+id/deleteAddressBottomSheetFragment"
+        android:name="com.app.bharatphoton.fragment.address.DeleteAddressBottomSheetFragment"
+        android:label="fragment_delete_address_bottom_sheet"
+        tools:layout="@layout/fragment_delete_address_bottom_sheet" />
+    <dialog
+        android:id="@+id/offersAndCouponsFragment"
+        android:name="com.app.bharatphoton.fragment.cart.OffersAndCouponsFragment"
+        android:label="fragment_offers_and_coupons"
+        tools:layout="@layout/fragment_offers_and_coupons" />
+    <dialog
+        android:id="@+id/pinCodeBottomSheetFragment"
+        android:name="com.app.bharatphoton.fragment.product.PinCodeBottomSheetFragment"
+        android:label="fragment_pin_code_bottom_sheet"
+        tools:layout="@layout/fragment_pin_code_bottom_sheet" />
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.app.bharatphoton.activity.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.app.bharatphoton.fragment.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/editProfileBusinessFragment"
+        android:name="com.app.bharatphoton.fragment.profile.EditProfileBusinessFragment"
+        android:label="fragment_edit_profile_business"
+        tools:layout="@layout/fragment_edit_profile_business" />
+    <dialog
+        android:id="@+id/addReviewFragment"
+        android:name="com.app.bharatphoton.fragment.review.AddReviewFragment"
+        android:label="fragment_add_review"
+        tools:layout="@layout/fragment_add_review" />
+    <fragment
+        android:id="@+id/myProductFragment"
+        android:name="com.app.bharatphoton.fragment.product.MyProductFragment"
+        android:label="fragment_my_product"
+        tools:layout="@layout/fragment_my_product" />
+    <dialog
+        android:id="@+id/productInstalledDetailsBottomSheetFragment"
+        android:name="com.app.bharatphoton.fragment.product.ProductInstalledDetailsBottomSheetFragment"
+        android:label="fragment_product_installed_details_bottom_sheet"
+        tools:layout="@layout/fragment_product_installed_details_bottom_sheet" />
+    <fragment
+        android:id="@+id/complaintRegisterFragment"
+        android:name="com.app.bharatphoton.fragment.complaint.ComplaintRegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_complaint_register" />
+    <fragment
+        android:id="@+id/complaintRegisteredFragment"
+        android:name="com.app.bharatphoton.fragment.complaint.ComplaintRegisteredFragment"
+        android:label="fragment_complaint_registered"
+        tools:layout="@layout/fragment_complaint_registered" />
+    <fragment
+        android:id="@+id/referFriendFragment"
+        android:name="com.app.bharatphoton.fragment.profile.ReferFriendFragment"
+        android:label="fragment_refer_friend"
+        tools:layout="@layout/fragment_refer_friend" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.app.bharatphoton.fragment.notification.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/orderTrackingFragment"
+        android:name="com.app.bharatphoton.fragment.order.OrderTrackingFragment"
+        android:label="fragment_order_tracking"
+        tools:layout="@layout/fragment_order_tracking" />
+    <dialog
+        android:id="@+id/deleteAccountFragment"
+        android:name="com.app.bharatphoton.fragment.auth.DeleteAccountBottomSheetFragment"
+        android:label="fragment_delete_account"
+        tools:layout="@layout/fragment_delete_account_bottom_sheet" />
+    <fragment
+        android:id="@+id/paymentHistoryFragment"
+        android:name="com.app.bharatphoton.fragment.payment.PaymentHistoryFragment"
+        android:label="fragment_payment_history"
+        tools:layout="@layout/fragment_payment_history" />
+    <fragment
+        android:id="@+id/renewWarrantyFragment"
+        android:name="com.app.bharatphoton.fragment.profile.RenewWarrantyFragment"
+        android:label="fragment_renew_warranty"
+        tools:layout="@layout/fragment_renew_warranty" />
+    <fragment
+        android:id="@+id/mySubscriptionFragment"
+        android:name="com.app.bharatphoton.fragment.subscription.MySubscriptionFragment"
+        android:label="fragment_my_subscription"
+        tools:layout="@layout/fragment_my_subscription" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.app.bharatphoton.fragment.auth.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.app.bharatphoton.fragment.auth.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.app.bharatphoton.fragment.auth.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/mySubscriptionDetailsFragment"
+        android:name="com.app.bharatphoton.fragment.subscription.MySubscriptionDetailsFragment"
+        android:label="fragment_my_subscription_details"
+        tools:layout="@layout/fragment_my_subscription_details" />
+    <fragment
+        android:id="@+id/renewPlanFragment"
+        android:name="com.app.bharatphoton.fragment.profile.RenewPlanFragment"
+        android:label="fragment_renew_plan"
+        tools:layout="@layout/fragment_renew_plan" />
+    <fragment
+        android:id="@+id/warrantyPlansFragment"
+        android:name="com.app.bharatphoton.fragment.product.WarrantyPlansFragment"
+        android:label="fragment_warranty_plans"
+        tools:layout="@layout/fragment_warranty_plans" />
+    <fragment
+        android:id="@+id/customerSupportFragment"
+        android:name="com.app.bharatphoton.fragment.profile.CustomerSupportFragment"
+        android:label="fragment_customer_support"
+        tools:layout="@layout/fragment_customer_support" />
+    <fragment
+        android:id="@+id/complaintHistoryDetailsFragment"
+        android:name="com.app.bharatphoton.fragment.complaint.ComplaintHistoryDetailsFragment"
+        android:label="fragment_complaint_history_details"
+        tools:layout="@layout/fragment_complaint_history_details" />
+    <fragment
+        android:id="@+id/reviewFragment"
+        android:name="com.app.bharatphoton.fragment.review.ReviewFragment"
+        android:label="fragment_review"
+        tools:layout="@layout/fragment_review" />
+    <fragment
+        android:id="@+id/reportsFragment"
+        android:name="com.app.bharatphoton.fragment.profile.ReportsFragment"
+        android:label="fragment_reports"
+        tools:layout="@layout/fragment_reports" />
+    <fragment
+        android:id="@+id/wishListFragment"
+        android:name="com.app.bharatphoton.fragment.cart.WishListFragment"
+        android:label="fragment_wish_list"
+        tools:layout="@layout/fragment_wish_list" />
+    <fragment
+        android:id="@+id/subscribeFragment"
+        android:name="com.app.bharatphoton.fragment.subscription.SubscribeFragment"
+        android:label="fragment_subscribe"
+        tools:layout="@layout/fragment_subscribe" />
+    <fragment
+        android:id="@+id/subscribeItemListFragment"
+        android:name="com.app.bharatphoton.fragment.subscription.SubscribeItemListFragment"
+        android:label="fragment_subscribe_item_list"
+        tools:layout="@layout/fragment_subscribe_item_list" />
+    <fragment
+        android:id="@+id/sinDetailsFragment"
+        android:name="com.app.bharatphoton.fragment.product.SinDetailsFragment"
+        android:label="fragment_sin_details"
+        tools:layout="@layout/fragment_sin_details" />
+    <fragment
+        android:id="@+id/paymentSuccessFragment"
+        android:name="com.app.bharatphoton.fragment.payment.PaymentSuccessFragment"
+        android:label="fragment_payment_successfull"
+        tools:layout="@layout/fragment_payment_successfull" />
+    <fragment
+        android:id="@+id/viewAllSubcategoryProductListFragment"
+        android:name="com.app.bharatphoton.fragment.product.ViewAllSubcategoryProductListFragment"
+        android:label="fragment_view_all_subcategory_product_list"
+        tools:layout="@layout/fragment_view_all_subcategory_product_list" />
+    <fragment
+        android:id="@+id/userManualFragment"
+        android:name="com.app.bharatphoton.fragment.profile.UserManualFragment"
+        android:label="fragment_user_manual"
+        tools:layout="@layout/fragment_user_manual" />
+    <fragment
+        android:id="@+id/renewSubscriptionPlanFragment"
+        android:name="com.app.bharatphoton.fragment.subscription.RenewSubscriptionPlanFragment"
+        android:label="fragment_renew_subscription_plan"
+        tools:layout="@layout/fragment_renew_subscription_plan" />
+    <fragment
+        android:id="@+id/monthlyGraphFragment"
+        android:name="com.app.bharatphoton.fragment.product.MonthlyGraphFragment"
+        android:label="fragment_monthly_graph"
+        tools:layout="@layout/fragment_monthly_graph" />
+
+</navigation>
